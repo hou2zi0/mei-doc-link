@@ -102,9 +102,9 @@ It may however be implemented as shown [here](https://github.com/hou2zi0/tei-doc
 
 When it works, it should look like this:
 
-![Code Snippet with links to MEI documentation and dark theme](data/img/Abb_1.png)
+![Code Snippet with links to MEI documentation and dark theme](data/img/abb_1.png)
 
-![Link from element name to MEI documentation](data/img/Abb_2.png)
+![Link from element name to MEI documentation](data/img/abb_2.png)
 
 The simple example shows the built-in line numbering feature.  The corresponding live example may be found  [here](https://hou2zi0.github.io/mei-doc-link/examples/example.html).
 
