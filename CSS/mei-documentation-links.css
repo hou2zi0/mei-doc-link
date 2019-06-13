@@ -1,0 +1,93 @@
+/*
+* MEI Documentation Link
+*/
+
+span.element a.mei-doc-link, span.php  {
+  color: #e06c75;
+}
+
+span.element {
+
+}
+
+span.delimiters, span.delimiters span.php, span.php span.hljs-meta {
+  font-weight: bolder;
+  color: #abb2bf;
+}
+
+span.attribute, span.attribute span.php {
+  font-weight: bolder;
+  color: #d19a66 !important;
+}
+
+span.attribute a.mei-doc-link, span.attribute a.mei-doc-link span.php {
+  font-weight: bolder;
+  color: #d19a66 !important;
+}
+
+
+span.attribute a.mei-doc-link:hover {
+  color: #efbe8f !important;
+}
+
+code.mei-doc-link {
+  color: #abb2bf;
+  background-color: #282c34 !important;
+}
+
+span.element span.value span.hljs-string {
+  color: #98c379 !important;
+}
+
+span.value span.hljs-string {
+  color: #98c379 !important;
+}
+
+span.element span.value {
+  color: #98c379 !important;
+}
+
+span.value {
+  color: #98c379 !important;
+}
+
+span.element a.mei-doc-link:hover {
+  color: #ea9198;
+}
+
+span.comment-string span.hljs-comment {
+  color: #778899 !important;
+}
+
+li code.xml.mei-doc-link, p code.xml.mei-doc-link, blockquote code.xml.mei-doc-link {
+  white-space: pre-line !important;
+  font-style: normal !important;
+}
+
+pre {
+  border: 1px solid black;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 10px 15px 10px 15px;
+  background-color: #282c34 !important;
+}
+
+span.line-numbering {
+  text-align: right;
+  display: inline-block;
+  min-width: 2em;
+  position: relative;
+  padding-right: 0.5em;
+  margin-left: -2.5em;
+  margin-right: 0.2em;
+}
+
+
+
+span.code-line {}
+
+code {
+    border: 0px solid black !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+  }

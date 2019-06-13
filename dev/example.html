@@ -1,0 +1,422 @@
+<html>
+
+<head>
+  <title>MEI Documentation Links :: Example</title>
+  <style>
+    /*
+   * I add this to html files generated with pandoc.
+   */
+
+    html {
+      font-size: 100%;
+      overflow-y: scroll;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    body {
+      color: #444;
+      font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+      font-size: 12px;
+      line-height: 1.7;
+      padding: 1em;
+      margin: auto;
+      max-width: 42em;
+      background: #fefefe;
+    }
+
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #0b0080;
+    }
+
+    a:hover {
+      color: #06e;
+    }
+
+    a:active {
+      color: #faa700;
+    }
+
+    a:focus {
+      outline: thin dotted;
+    }
+
+    *::-moz-selection {
+      background: rgba(255, 255, 0, 0.3);
+      color: #000;
+    }
+
+    *::selection {
+      background: rgba(255, 255, 0, 0.3);
+      color: #000;
+    }
+
+    a::-moz-selection {
+      background: rgba(255, 255, 0, 0.3);
+      color: #0645ad;
+    }
+
+    a::selection {
+      background: rgba(255, 255, 0, 0.3);
+      color: #0645ad;
+    }
+
+    p {
+      margin: 1em 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #111;
+      line-height: 125%;
+      margin-top: 2em;
+      font-weight: normal;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+
+    h3 {
+      font-size: 1.5em;
+    }
+
+    h4 {
+      font-size: 1.2em;
+    }
+
+    h5 {
+      font-size: 1em;
+    }
+
+    h6 {
+      font-size: 0.9em;
+    }
+
+    blockquote {
+      color: #666666;
+      margin: 0;
+      padding-left: 3em;
+      border-left: 0.5em #EEE solid;
+    }
+
+    hr {
+      display: block;
+      height: 2px;
+      border: 0;
+      border-top: 1px solid #aaa;
+      border-bottom: 1px solid #eee;
+      margin: 1em 0;
+      padding: 0;
+    }
+
+    pre,
+    code,
+    kbd,
+    samp {
+      color: #000;
+      font-family: monospace, monospace;
+      _font-family: 'courier new', monospace;
+      font-size: 0.98em;
+    }
+
+    pre {
+      border: 1px solid black;
+      white-space: pre;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      padding: 10px 15px 10px 15px;
+      background-color: #282c34 !important;
+    }
+
+    b,
+    strong {
+      font-weight: bold;
+    }
+
+    dfn {
+      font-style: italic;
+    }
+
+    ins {
+      background: #ff9;
+      color: #000;
+      text-decoration: none;
+    }
+
+    mark {
+      background: #ff0;
+      color: #000;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    ul,
+    ol {
+      margin: 1em 0;
+      padding: 0 0 0 2em;
+    }
+
+    li p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul ul,
+    ol ol {
+      margin: .3em 0;
+    }
+
+    dl {
+      margin-bottom: 1em;
+    }
+
+    dt {
+      font-weight: bold;
+      margin-bottom: .8em;
+    }
+
+    dd {
+      margin: 0 0 .8em 2em;
+    }
+
+    dd:last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      border: 0;
+      -ms-interpolation-mode: bicubic;
+      vertical-align: middle;
+    }
+
+    figure {
+      display: block;
+      text-align: center;
+      margin: 1em 0;
+    }
+
+    figure img {
+      border: none;
+      margin: 0 auto;
+    }
+
+    figcaption {
+      font-size: 0.8em;
+      font-style: italic;
+      margin: 0 0 .8em;
+    }
+
+    table {
+      margin-bottom: 2em;
+      border-bottom: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+
+    table th {
+      padding: .2em 1em;
+      background-color: #eee;
+      border-top: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+    }
+
+    table td {
+      padding: .2em 1em;
+      border-top: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      vertical-align: top;
+    }
+
+    .author {
+      font-size: 1.2em;
+      text-align: center;
+    }
+
+    span.line-numbering {
+      text-align: right;
+      display: inline-block;
+      min-width: 2em;
+      position: relative;
+      padding-right: 0.5em;
+      margin-left: -2.5em;
+      margin-right: 0.2em;
+    }
+
+
+
+    span.code-line {}
+
+
+    @media only screen and (min-width: 480px) {
+      body {
+        font-size: 14px;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="../CSS/mei-documentation-links.css" />
+
+</head>
+
+<body>
+  <h1>TEI Documentation Links</h1>
+  <h2>Example</h2>
+  <pre><code class="xml tei-doc-link">&lt;mei xmlns=&quot;http://www.music-encoding.org/ns/mei&quot; meiversion=&quot;4.0.0&quot;&gt;
+  &lt;meiHead&gt;
+    &lt;fileDesc&gt;
+      &lt;titleStmt&gt;
+        &lt;title&gt;Example of encoding editorial markup&lt;/title&gt;
+        &lt;composer&gt;
+          &lt;persName role=&quot;composer&quot;&gt;Carl-Maria von Weber&lt;/persName&gt;
+        &lt;/composer&gt;
+        &lt;respStmt&gt;
+          &lt;persName role=&quot;encoder&quot;&gt;Maja Hartwig&lt;/persName&gt;
+          &lt;persName role=&quot;encoder&quot;&gt;Kristina Richts&lt;/persName&gt;
+        &lt;/respStmt&gt;
+      &lt;/titleStmt&gt;
+      ...
+  &lt;/meiHead&gt;
+  &lt;music&gt;
+    &lt;body&gt;
+      &lt;mdiv&gt;
+        &lt;score&gt;
+          &lt;section&gt;
+            &lt;scoreDef meter.count=&quot;3&quot; meter.unit=&quot;4&quot; key.sig=&quot;4f&quot; key.mode=&quot;minor&quot;&gt;
+              &lt;staffGrp bar.thru=&quot;true&quot; symbol=&quot;brace&quot;&gt;
+                &lt;staffDef lines=&quot;5&quot; n=&quot;1&quot; meter.count=&quot;3&quot; meter.unit=&quot;4&quot; key.sig=&quot;2f&quot; clef.shape=&quot;GG&quot; clef.line=&quot;2&quot; xml:id=&quot;s1&quot;&gt;
+                  &lt;label&gt;Clarinetto principale&lt;/label&gt;
+                &lt;/staffDef&gt;
+                &lt;staffDef lines=&quot;5&quot; n=&quot;2&quot; clef.shape=&quot;GG&quot; clef.line=&quot;2&quot; key.sig=&quot;4f&quot; xml:id=&quot;s2&quot;&gt;
+                  &lt;label&gt;Violini&lt;/label&gt;
+                &lt;/staffDef&gt;
+                &lt;staffDef lines=&quot;5&quot; n=&quot;3&quot; clef.shape=&quot;G&quot; clef.line=&quot;2&quot; key.sig=&quot;4f&quot; xml:id=&quot;s3&quot;/&gt;
+                &lt;staffDef lines=&quot;5&quot; n=&quot;4&quot; clef.shape=&quot;C&quot; clef.line=&quot;3&quot; key.sig=&quot;4f&quot; xml:id=&quot;s4&quot;&gt;
+                  &lt;label&gt;Viole&lt;/label&gt;
+                &lt;/staffDef&gt;
+                &lt;staffDef lines=&quot;5&quot; n=&quot;5&quot; clef.shape=&quot;GG&quot; clef.line=&quot;2&quot; key.sig=&quot;4f&quot; xml:id=&quot;s5&quot;&gt;
+                  &lt;label&gt;Flauti&lt;/label&gt;
+                &lt;/staffDef&gt;
+                &lt;staffDef lines=&quot;5&quot; n=&quot;6&quot; clef.shape=&quot;GG&quot; clef.line=&quot;2&quot; key.sig=&quot;4f&quot; xml:id=&quot;s6&quot;&gt;
+                  &lt;label&gt;Oboi&lt;/label&gt;
+                &lt;/staffDef&gt;
+                &lt;staffDef n=&quot;7&quot; lines=&quot;5&quot; clef.shape=&quot;GG&quot; clef.line=&quot;2&quot; xml:id=&quot;s7&quot;&gt;
+                  &lt;label&gt;Corni in F&lt;/label&gt;
+                &lt;/staffDef&gt;
+                &lt;staffDef n=&quot;8&quot; lines=&quot;5&quot; clef.shape=&quot;C&quot; clef.line=&quot;4&quot; key.sig=&quot;4f&quot; xml:id=&quot;s8&quot;&gt;
+                  &lt;label&gt;Fagotti&lt;/label&gt;
+                &lt;/staffDef&gt;
+                &lt;staffDef n=&quot;9&quot; lines=&quot;5&quot; clef.shape=&quot;GG&quot; clef.line=&quot;2&quot; key.sig=&quot;0&quot; xml:id=&quot;s9&quot;&gt;
+                  &lt;label&gt;Trombe in F&lt;/label&gt;
+                &lt;/staffDef&gt;
+                &lt;staffDef n=&quot;10&quot; lines=&quot;5&quot; clef.shape=&quot;C&quot; clef.line=&quot;4&quot; key.sig=&quot;0&quot; xml:id=&quot;s10&quot;&gt;
+                  &lt;label&gt;Timpani&lt;/label&gt;
+                &lt;/staffDef&gt;
+                &lt;staffDef n=&quot;11&quot; lines=&quot;5&quot; clef.shape=&quot;F&quot; clef.line=&quot;4&quot; xml:id=&quot;s11&quot; key.sig=&quot;4f&quot;&gt;
+                  &lt;label&gt;Baßi&lt;/label&gt;
+                &lt;/staffDef&gt;
+              &lt;/staffGrp&gt;
+            &lt;/scoreDef&gt;
+            &lt;measure n=&quot;259&quot; xml:id=&quot;m259&quot;&gt;
+              &lt;staff n=&quot;1&quot; xml:id=&quot;m259_s1&quot;&gt;
+                &lt;layer&gt;
+                  &lt;beam&gt;
+                    &lt;note pname=&quot;b&quot; oct=&quot;4&quot; dur=&quot;8&quot; xml:id=&quot;m259_s1_n1&quot; artic=&quot;acc&quot;/&gt;
+                    &lt;note pname=&quot;g&quot; oct=&quot;4&quot; dur=&quot;16&quot; xml:id=&quot;m259_s1_n2&quot;/&gt;
+                    &lt;note pname=&quot;d&quot; oct=&quot;4&quot; dur=&quot;16&quot; xml:id=&quot;m259_s1_n3&quot;/&gt;
+                  &lt;/beam&gt;
+                  &lt;beam&gt;
+                    &lt;note pname=&quot;b&quot; oct=&quot;3&quot; dur=&quot;16&quot; xml:id=&quot;m259_s1_n4&quot;/&gt;
+                    &lt;note pname=&quot;c&quot; oct=&quot;4&quot; dur=&quot;16&quot; xml:id=&quot;m259_s1_n5&quot;/&gt;
+                    &lt;note pname=&quot;d&quot; oct=&quot;4&quot; dur=&quot;16&quot; xml:id=&quot;m259_s1_n6&quot;/&gt;
+                    &lt;note pname=&quot;e&quot; oct=&quot;4&quot; dur=&quot;16&quot; xml:id=&quot;m26_s1_n7&quot;/&gt;
+                  &lt;/beam&gt;
+                  &lt;beam&gt;
+                    &lt;note pname=&quot;f&quot; oct=&quot;4&quot; dur=&quot;32&quot; xml:id=&quot;m259_s1_n8&quot;/&gt;
+                    &lt;note pname=&quot;f&quot; accid=&quot;s&quot; oct=&quot;4&quot; dur=&quot;32&quot; xml:id=&quot;m259_s1_n9&quot;/&gt;
+                    &lt;note pname=&quot;g&quot; dur=&quot;32&quot; oct=&quot;4&quot; xml:id=&quot;m259_s1_n10&quot;/&gt;
+                    &lt;note pname=&quot;a&quot; accid=&quot;f&quot; oct=&quot;4&quot; dur=&quot;32&quot; xml:id=&quot;m259_s1_n11&quot;/&gt;
+                    &lt;note pname=&quot;a&quot; accid=&quot;n&quot; oct=&quot;4&quot; dur=&quot;32&quot; xml:id=&quot;m259_s1_n12&quot;/&gt;
+                    &lt;note pname=&quot;b&quot; accid=&quot;f&quot; oct=&quot;4&quot; dur=&quot;32&quot; xml:id=&quot;m259_s1_n13&quot;/&gt;
+                    &lt;note pname=&quot;b&quot; accid=&quot;n&quot; oct=&quot;4&quot; dur=&quot;32&quot; xml:id=&quot;m259_s1_n14&quot;/&gt;
+                    &lt;note pname=&quot;c&quot; oct=&quot;5&quot; dur=&quot;32&quot; xml:id=&quot;m259_s1_n15&quot;/&gt;
+                    &lt;note pname=&quot;c&quot; accid=&quot;s&quot; oct=&quot;5&quot; dur=&quot;32&quot; xml:id=&quot;m259_s1_n16&quot;/&gt;
+                  &lt;/beam&gt;
+                &lt;/layer&gt;
+              &lt;/staff&gt;
+              &lt;staff n=&quot;2&quot; xml:id=&quot;m259_s2&quot;&gt;
+                &lt;layer&gt;
+                  &lt;note pname=&quot;a&quot; oct=&quot;4&quot; dur=&quot;2&quot; stem.dir=&quot;up&quot; xml:id=&quot;m259_s2_n1&quot;/&gt;
+                  &lt;rest dur=&quot;4&quot;/&gt;
+                &lt;/layer&gt;
+              &lt;/staff&gt;
+              &lt;tupletSpan startid=&quot;#m259_s1_n8&quot; endid=&quot;#m259_s1_n16&quot; bracket.visible=&quot;false&quot; num=&quot;9&quot; numbase=&quot;8&quot; num.place=&quot;below&quot; num.visible=&quot;true&quot; staff=&quot;1&quot;/&gt;
+              &lt;slur staff=&quot;1&quot; startid=&quot;#m259_s1_n1&quot; endid=&quot;#m259_s1_n16&quot; curvedir=&quot;below&quot;/&gt;
+            &lt;/measure&gt;
+          &lt;/section&gt;
+        &lt;/score&gt;
+      &lt;/mdiv&gt;
+    &lt;/body&gt;
+  &lt;/music&gt;
+</code></pre>
+  <p>
+    The base CSS used in this example is from <a href="https://gist.github.com/killercup/5917178">Pandoc.css</a> by <a href="https://gist.github.com/killercup">Pascal Hertleif (killercup)</a>. The dark theme is provided by the <a href="https://hou2zi0.github.io/tei-doc-link/CSS/tei-documentation-links.css">tei-documentation-links.css</a>.
+  </p>
+  <p>
+    The example is based on the MEI example Weber Op 73 provided by the MEI in the GitHub Repo <a href="https://github.com/music-encoding/sample-encodings">Sample Encodings</a>.
+  </p>
+  <script>
+    // const TEI_DOC_LINK = `xml tei-doc-link`;
+    const MEI_DOC_LINK_CONFIG = {
+      //     "querySelectorAll": false,
+      "lineNumbering": true
+    }
+  </script>
+  <script type="text/javascript" src="../JS/mei-documentation-links.js"></script>
+</body>
+
+</html>
